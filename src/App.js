@@ -4,13 +4,12 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
 import "firebase/compat/analytics"; // Import Firebase Analytics
-
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBBO8Xr4_rMLdBc4EvCBofTYdYqGxd6MWY",
+  apiKey: process.env.REACT_APP_APIKEY,
   authDomain: "chat2-33a3f.firebaseapp.com",
   projectId: "chat2-33a3f",
   storageBucket: "chat2-33a3f.appspot.com",
